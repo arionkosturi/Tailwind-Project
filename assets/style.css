@@ -1,0 +1,27 @@
+#menu-toggler {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+#menu-toggler:checked + nav {
+  display: block;
+}
+
+.menu-toggler-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  width: 22px;
+  height: 22px;
+}
+nav {
+  display: none;
+}
