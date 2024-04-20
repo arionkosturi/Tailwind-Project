@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="sticky top-0 bg-white shadow">
+    <header class="sticky top-0 bg-white shadow z-10">
       <div class="container my-3 mx-auto">
         <div class="flex justify-between items-center">
           <div class="flex items-center justify-between py-4">
@@ -52,7 +52,7 @@
         <input type="checkbox" id="menu-toggler" />
           <!-- NAVBAR -->
           <nav
-            class="absolute w-full sm:px-6 py-2 transition-all duration-300 ease-in-out bg-white top-20 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:translate-x-0 sm:flex md:items-center shadow-md sm:shadow-none">
+            class="absolute w-full sm:px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:translate-x-0 sm:flex md:items-center shadow-md sm:shadow-none">
             <div class="flex flex-col sm:flex-row md:mx-1 text-center">
               <a
                 class="sm:px-2 text-md text-purple-700 hover:text-white hover:bg-purple-600 transition-all ease-in-out duration-300"
@@ -81,7 +81,7 @@
       </div>
 
     </header>
-    <div class="hidden sm:block sticky text-center bg-gray-100 top-16 ">
+    <div class="hidden z-10 sm:block sticky text-center bg-gray-100 top-16 ">
       <a
         class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
@@ -118,5 +118,62 @@
         >Contact</a
       >
     </div>
+
+
+  <!-- Main News -->
+  <section class="main-news">
+
+    <div class="md:flex">
+      <div class="relative mx-4 my-2 md:w-1/2 hover:cursor-pointer">
+        <img src="assets/img/matt.webp" alt="" />
+        <div class="relative md:-mt-28 py-2 md:bg-opacity-60 w-full h-28  bg-purple-600 text-white hover:bg-opacity-80">
+          <h3 class="p-2 md:text-lg">
+            Matt Gaetz worries House may “end up with a Democrat” speaker
+            after MTG files to oust Mike Johnson
+          </h3>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2  flex-row p-1 my-1 hover:cursor-pointer mr-4">
+
+        <div class="flex hover:shadow-md rounded-md bg-slate-100">
+          <img src="assets/img/trump.webp" class="w-1/3 rounded-md" alt="" />
+          <p class="m-1">
+            Trump stares down first derailment of his campaign-to-courthouse strategy... 
+          </p>
+        </div>
+        <div class="flex mt-2 hover:shadow-md">
+          <img src="assets/img/taylor-swift.webp" class="w-1/3" alt="" />
+          <p class="m-1">
+            Taylor Swift
+            Judge Cites Taylor Swift Lyric in Response to Metallica Insurance Lawsuit
+            
+          </p>
+        </div>
+        <div class="flex mt-2 hover:shadow-md bg-slate-100">
+          <img src="assets/img/food.webp" class="w-1/3" alt="" />
+          <p class="m-1">
+A Huge New Study Found That a Popular Diet Is Linked With a 91% Higher Risk of Cardiovascular Death
+
+          </p>
+        </div>
+        <div class="flex mt-2 hover:shadow-md">
+          <img src="assets/img/robinho.webp" class="w-1/3" alt="" />
+          <p class="m-1">
+            Former footballer Robinho jailed in rural penitentiary for infamous inmates 
+          </p>
+        </div>
+        <div class="flex mt-2 hover:shadow-md bg-slate-100">
+          <img src="assets/img/stumpy.webp" class="w-1/3" alt="" />
+          <p class="m-1">
+            More than 100 iconic cherry trees in Washington are being cut down. So long, Stumpy 
+          </p>
+        </div>
+        
+  </section>
+
+  <!-- ./Main News -->
+
+
+
   </body>
 </html>
