@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
+  
+  <body class="sm:mx-2 md:mx-4 xl:mx-20 dark:bg-neutral-900">
     <!-- Header -->
-    <header class="sticky top-0 bg-white shadow z-30">
+    <header class="sticky top-0 bg-white 00 shadow z-30 dark:bg-neutral-800">
       <div class="container my-3 mx-auto">
         <div class="flex justify-between items-center">
           <div class="flex items-center justify-between py-4">
@@ -31,28 +32,24 @@
               >
                 <input
                   type="text"
-                  class="w-full  py-2 pl-3 pr-3 bg-white border border-purple-600 border-opacity-30 rounded-full focus:outline-none focus:ring focus:ring-opacity-70 focus:ring-purple-600"
+                  class="w-full  py-2 pl-3 pr-3 bg-white dark:bg-neutral-900 border border-purple-600 border-opacity-30 rounded-full focus:outline-none focus:ring focus:ring-opacity-70 focus:ring-purple-600"
                   placeholder="Search"
                 />
                 <div class="flex text-center">
                   <i
-                    class="fa fa-search bg-slate-100 bg-opacity-60 w-16 rounded-full p-2 text-xl hover:bg-purple-600 hover:bg-opacity-80 hover:text-white"
+                    class="fa fa-search dark:bg-slate-900 bg-slate-100 bg-opacity-60 w-16 rounded-full p-2 text-xl hover:bg-purple-600 hover:bg-opacity-80 hover:text-white"
                   ></i>
                 </div>
               </div>
             </div>
           </div>
           <!-- Menu Toggler -->
-          <img
-          src="./assets/img/menu.png"
-          alt="Menu Toggler Icon"
-          class="menu-toggler-icon sm:hidden mx-4 my-2"
-          
-        />
+          <i class="fa-solid fa-bars menu-toggler-icon sm:hidden mx-4 my-2 dark:text-gray-300 "></i>
+     
         <input type="checkbox" id="menu-toggler" />
           <!-- NAVBAR -->
           <nav
-            class="absolute w-full sm:px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:translate-x-0 sm:flex md:items-center shadow-md sm:shadow-none">
+            class="absolute w-full sm:px-6 py-2 bg-white dark:bg-neutral-800 top-16 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:flex md:items-center shadow-md sm:shadow-none">
             <div class="flex flex-col sm:flex-row sm:mx-1 mx-10 text-left">
               <a
                 class="sm:px-2 text-md text-purple-700 hover:text-white hover:bg-purple-600 transition-all ease-in-out duration-300"
@@ -82,15 +79,15 @@
                       </button>
                       <!-- Dropdown menu -->
                       <div
-                          class="absolute left-0 w-full sm:w-auto mt-1 top-5  bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                          class="absolute left-0 w-full sm:w-auto mt-1 top-5  bg-white dark:bg-neutral-800 divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
                           <div class="py-1">
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-white hover:bg-purple-600">News</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Life</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Entertainment</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Finance</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Sports</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Climate Change</a>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  hover:text-white hover:bg-purple-600">Health</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:text-white hover:bg-purple-600">News</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Life</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Entertainment</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Finance</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Sports</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Climate Change</a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700  dark:text-gray-200 hover:text-white hover:bg-purple-600">Health</a>
 
                           </div>
                       </div>
@@ -102,56 +99,55 @@
           </nav>
         </div>
       </div>
-
+  
     </header>
-    <div class="hidden z-20 sm:block sticky text-center bg-gray-100 top-[76px] ">
+    <!-- Submenu -->
+    <div class="hidden z-20  sm:block sticky text-center bg-gray-100 dark:bg-neutral-900 top-[76px] ">
       <span
-        class="mx-2 text-m transition-colors duration-300 transform font-bold"
+        class="mx-2 text-m dark:text-gray-300  font-bold"
         
         >Today's News</span
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >US</a
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >Politics</a
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >World</a
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >Science</a
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >Originals</a
       >
       <a
-        class="mx-2 text-m transition-colors duration-300 transform text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-m  text-gray-600 hover:text-white hover:bg-purple-600"
         href="#"
         >Contact</a
       >
       
     </div>
 
-
   <!-- Main News -->
-  <section class="main-news">
-
-    <div class="md:flex">
-      <div class="relative mx-4 my-2 md:w-2/3  hover:cursor-pointer hover:opacity-100">
-        <div class="opacity-95 hover:opacity-100">
+    <div class="md:flex ">
+      <!-- Left Side -->
+      <div class="relative ml-1 md:ml-4 xl:ml-0 my-2 md:w-2/3  hover:cursor-pointer hover:opacity-100">
+        <div class="opacity-95 hover:opacity-100 mr-2">
         <img src="assets/img/matt.webp" alt="" class="opacity-90" />
-        <div class="relative md:-mt-28 py-2 md:bg-opacity-60 w-full h-28  bg-purple-600 text-white hover:bg-opacity-80  ">
+        <div class="relative lg:-mt-28 py-2 bg-opacity-100 lg:bg-opacity-80 w-full h-28  bg-purple-800 text-white hover:bg-opacity-90  ">
           <h3 class="p-2 md:text-lg">
             Matt Gaetz worries House may “end up with a Democrat” speaker
             after MTG files to oust Mike Johnson
@@ -159,46 +155,42 @@
         </div>
       </div>
     </div>
-      <div class="w-full md:w-1/2  flex-row p-1 my-1 hover:cursor-pointer mr-4">
-
-        <div class="flex opacity-85 hover:opacity-100 hover:shadow-md rounded-md bg-slate-100">
-          <img src="assets/img/trump.webp" class="w-1/3 rounded-md" alt="" />
-          <p class="m-1">
+    <!-- Right Side -->
+      <div class="w-full md:w-1/2 lg:w-1/3  flex-row p-1 my-1 hover:cursor-pointer ">
+        <div class="flex opacity-85 hover:opacity-100 hover:shadow-md bg-slate-100  dark:bg-neutral-800">
+          <img src="assets/img/trump.webp" class="w-1/3" alt="" />
+          <p class="m-1 dark:text-gray-300">
             Trump stares down first derailment of his campaign-to-courthouse strategy... 
           </p>
         </div>
         <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md">
           <img src="assets/img/taylor-swift.webp" class="w-1/3" alt="" />
-          <p class="m-1">
+          <p class="m-1 dark:text-gray-300">
             Taylor Swift
             Judge Cites Taylor Swift Lyric in Response to Metallica Insurance Lawsuit
             
           </p>
         </div>
-        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100">
+        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100 dark:bg-neutral-800">
           <img src="assets/img/food.webp" class="w-1/3" alt="" />
-          <p class="m-1">
+          <p class="m-1 dark:text-gray-300">
 A Huge New Study Found That a Popular Diet Is Linked With a 91% Higher Risk of Cardiovascular Death
 
           </p>
         </div>
         <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md">
           <img src="assets/img/robinho.webp" class="w-1/3" alt="" />
-          <p class="m-1">
+          <p class="m-1 dark:text-gray-300">
             Former footballer Robinho jailed in rural penitentiary for infamous inmates 
           </p>
         </div>
-        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100">
+        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100 dark:bg-neutral-800">
           <img src="assets/img/stumpy.webp" class="w-1/3" alt="" />
-          <p class="m-1">
+          <p class="m-1 dark:text-gray-300">
             More than 100 iconic cherry trees in Washington are being cut down. So long, Stumpy 
           </p>
         </div>
-        
-  </section>
-
   <!-- ./Main News -->
-
 
 
   </body>

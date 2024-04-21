@@ -25,3 +25,21 @@
 nav {
   display: none;
 }
+
+/* Custom ScrollBar  */
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbd2f7;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #832cee;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6001d2;
+}
