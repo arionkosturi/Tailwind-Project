@@ -15,12 +15,12 @@
 
   <body class="sm:mx-2 md:mx-4 xl:mx-20 dark:bg-neutral-900">
     <!-- Header -->
-    <header class="sticky top-0 bg-white 00 shadow z-30 dark:bg-neutral-800">
-      <div class="container my-3 mx-auto">
-        <div class="flex justify-between items-center">
+    <header class="sticky top-0 z-30 bg-white shadow dark:bg-neutral-800">
+      <div class="container mx-auto my-3">
+        <div class="flex items-center justify-between">
           <div class="flex items-center justify-between py-4">
             <div class="flex">
-              <div class="logo text-purple-700 text-xl font-bold mx-10">
+              <div class="mx-10 text-xl font-bold text-purple-700 logo">
                 <a href="#">
                   <i class="fa-regular fa-newspaper"><p>news</p></i>
                 </a>
@@ -32,12 +32,12 @@
               >
                 <input
                   type="text"
-                  class="w-full py-2 pl-3 pr-3 bg-white dark:bg-neutral-900 border border-purple-600 border-opacity-30 rounded-full focus:outline-none focus:ring focus:ring-opacity-70 focus:ring-purple-600"
+                  class="w-full py-2 pl-3 pr-3 bg-white border border-purple-600 rounded-full dark:bg-neutral-900 border-opacity-30 focus:outline-none focus:ring focus:ring-opacity-70 focus:ring-purple-600"
                   placeholder="Search"
                 />
                 <div class="flex text-center">
                   <i
-                    class="fa fa-search dark:bg-slate-900 bg-slate-100 bg-opacity-60 w-16 rounded-full p-2 text-xl hover:bg-purple-600 hover:bg-opacity-80 hover:text-white"
+                    class="w-16 p-2 text-xl rounded-full fa fa-search dark:bg-slate-900 bg-slate-100 bg-opacity-60 hover:bg-purple-600 hover:bg-opacity-80 hover:text-white"
                   ></i>
                 </div>
               </div>
@@ -45,27 +45,29 @@
           </div>
           <!-- Menu Toggler -->
           <i
-            class="fa-solid fa-bars menu-toggler-icon sm:hidden mx-4 my-2 dark:text-gray-300"
+            class="mx-4 my-2 fa-solid fa-bars menu-toggler-icon sm:hidden dark:text-gray-300"
           ></i>
 
           <input type="checkbox" id="menu-toggler" />
           <!-- NAVBAR -->
           <nav
-            class="absolute w-full sm:px-6 py-2 bg-white dark:bg-neutral-800 top-16 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:flex md:items-center shadow-md sm:shadow-none"
+            class="absolute w-full py-2 bg-white shadow-md sm:px-4 dark:bg-neutral-800 top-16 sm:mt-0 sm:top-0 sm:relative sm:w-auto sm:opacity-100 sm:flex md:items-center sm:shadow-none"
           >
-            <div class="flex flex-col sm:flex-row sm:mx-1 mx-10 text-left">
+            <div
+              class="flex flex-col mx-10 text-left text-purple-700 sm:flex-row sm:mx-1"
+            >
               <a
-                class="sm:px-2 text-md text-purple-700 hover:text-white hover:bg-purple-600 transition-all ease-in-out duration-300"
+                class="transition-all duration-300 ease-in-out sm:px-2 text-md hover:text-white hover:bg-purple-600"
                 href="#"
                 >News</a
               >
               <a
-                class="sm:px-2 text-md text-purple-700 hover:text-white hover:bg-purple-600 transition-all ease-in-out duration-300"
+                class="transition-all duration-300 ease-in-out sm:px-2 text-md hover:text-white hover:bg-purple-600"
                 href="#"
                 >Finance</a
               >
               <a
-                class="sm:px-1 text-md text-purple-700 hover:text-white hover:bg-purple-600 transition-all ease-in-out duration-300"
+                class="transition-all duration-300 ease-in-out sm:px-1 text-md hover:text-white hover:bg-purple-600"
                 href="#"
                 >Sports</a
               >
@@ -74,7 +76,7 @@
                 <div class="group">
                   <button
                     type="button"
-                    class="inline-flex justify-left items-center w-full sm:px-2 text-md text-purple-700 transition-all ease-in-out duration-300"
+                    class="inline-flex items-center w-full text-purple-700 transition-all duration-300 ease-in-out justify-left sm:px-2 text-md"
                   >
                     More
                     <!-- Dropdown arrow -->
@@ -89,7 +91,7 @@
                   </button>
                   <!-- Dropdown menu -->
                   <div
-                    class="absolute left-0 w-full sm:w-auto mt-1 top-5 bg-white dark:bg-neutral-800 divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
+                    class="absolute left-0 invisible w-full mt-1 transition duration-300 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 sm:w-auto top-5 dark:bg-neutral-800 group-hover:opacity-100 group-hover:visible"
                   >
                     <div class="py-1">
                       <a
@@ -140,50 +142,49 @@
     <div
       class="hidden z-20 sm:block sticky text-center bg-gray-100 dark:bg-neutral-900 top-[76px]"
     >
-      <span class="mx-2 text-m dark:text-gray-300 font-bold">Today's News</span>
+      <span class="mx-2 font-bold text-m dark:text-gray-300">Today's News</span>
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >US</a
       >
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >Politics</a
       >
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >World</a
       >
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >Science</a
       >
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >Originals</a
       >
       <a
-        class="mx-2 text-m text-gray-600 hover:text-white hover:bg-purple-600"
+        class="mx-2 text-gray-600 text-m hover:text-white hover:bg-purple-600"
         href="#"
         >Contact</a
       >
     </div>
 
-    
     <!-- Main News -->
     <div class="md:flex">
       <!-- Left Side -->
       <div
-        class="relative ml-1 md:ml-4 xl:ml-0 my-2 md:w-2/3 hover:cursor-pointer hover:opacity-100"
+        class="relative my-2 ml-1 md:ml-4 xl:ml-0 md:w-2/3 hover:cursor-pointer hover:opacity-100"
       >
-        <div class="opacity-95 hover:opacity-100 mr-2">
+        <div class="mr-2 opacity-95 hover:opacity-100">
           <img src="assets/img/matt.webp" alt="" class="opacity-90" />
           <div
-            class="relative lg:-mt-28 py-2 bg-opacity-100 lg:bg-opacity-80 w-full h-28 bg-purple-800 text-white hover:bg-opacity-90"
+            class="relative w-full py-2 text-white bg-purple-800 bg-opacity-100 lg:-mt-28 lg:bg-opacity-80 h-28 hover:bg-opacity-90"
           >
             <h3 class="p-2 md:text-lg">
               Matt Gaetz worries House may “end up with a Democrat” speaker
@@ -194,7 +195,7 @@
       </div>
       <!-- Right Side -->
       <div
-        class="w-full md:w-1/2 lg:w-1/3 flex-row p-1 my-1 hover:cursor-pointer"
+        class="flex-row w-full p-1 my-1 md:w-1/2 lg:w-1/3 hover:cursor-pointer"
       >
         <div
           class="flex opacity-85 hover:opacity-100 hover:shadow-md bg-slate-100 dark:bg-neutral-800"
@@ -205,7 +206,7 @@
             strategy...
           </p>
         </div>
-        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md">
+        <div class="flex mt-2 opacity-85 hover:opacity-100 hover:shadow-md">
           <img src="assets/img/taylor-swift.webp" class="w-1/3" alt="" />
           <p class="m-1 dark:text-gray-300">
             Taylor Swift Judge Cites Taylor Swift Lyric in Response to Metallica
@@ -213,7 +214,7 @@
           </p>
         </div>
         <div
-          class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100 dark:bg-neutral-800"
+          class="flex mt-2 opacity-85 hover:opacity-100 hover:shadow-md bg-slate-100 dark:bg-neutral-800"
         >
           <img src="assets/img/food.webp" class="w-1/3" alt="" />
           <p class="m-1 dark:text-gray-300">
@@ -221,7 +222,7 @@
             Higher Risk of Cardiovascular Death
           </p>
         </div>
-        <div class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md">
+        <div class="flex mt-2 opacity-85 hover:opacity-100 hover:shadow-md">
           <img src="assets/img/robinho.webp" class="w-1/3" alt="" />
           <p class="m-1 dark:text-gray-300">
             Former footballer Robinho jailed in rural penitentiary for infamous
@@ -229,7 +230,7 @@
           </p>
         </div>
         <div
-          class="flex opacity-85 hover:opacity-100 mt-2 hover:shadow-md bg-slate-100 dark:bg-neutral-800"
+          class="flex mt-2 opacity-85 hover:opacity-100 hover:shadow-md bg-slate-100 dark:bg-neutral-800"
         >
           <img src="assets/img/stumpy.webp" class="w-1/3" alt="" />
           <p class="m-1 dark:text-gray-300">
@@ -240,145 +241,90 @@
       </div>
       <!-- ./Main News -->
     </div>
-    <div class="w-full  bg-gray-100">
-      <div class="border-t-8 border-red-600 w-2/12"></div>
+    <!-- Slogan - Real News -->
+    <div class="w-full bg-gray-100 dark:bg-neutral-700 dark:text-gray-200">
+      <div class="w-2/12 border-t-8 border-red-600"></div>
       <h3 class="text-xl">Real News</h3>
       <h1 class="text-2xl">Real Time</h1>
-      <div class="border-b-8 border-red-600 w-2/12"></div>
+      <div class="w-2/12 border-b-8 border-red-600"></div>
     </div>
 
-    <div class="space-x-2 grid md:grid-cols-2 xl:grid-cols-3">
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+    <div class="grid lg:grid-cols-2 2xl:grid-cols-3">
+      <article class="flex my-3 bg-white shadow-xl hover:shadow-xl">
         <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/trump.webp"
-            class="w-full"
-          />
+          <img alt="" src="assets/img/trump.webp" class="w-full" />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-2 sm:border-l-transparent sm:p-4"
+            class="p-2 border-s border-gray-900/10 sm:border-l-transparent sm:p-4"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Trump stares down first derailment of his campaign-to-courthouse strategy... 
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Trump stares down first derailment of his campaign-to-courthouse
+                strategy...
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              For days, Donald Trump’s fury over the requirement to secure hundreds of millions of dollars in bond money by Monday has been bubbling behind the scenes and through a steady stream of social media posts. Friday’s public barrage on his Truth Social platform, which included multiple all-caps posts, highlighted his persistent anger with the judge who handed down the $464 million judgment, the New York attorney general who brought the civil fraud case and Trump’s insistence that it’s all designed to derail his presidential campaign. 
+              For days, Donald Trump’s fury over the requirement to secure
+              hundreds of millions of dollars in bond money by Monday has been
+              bubbling behind the scenes and through a steady stream of social
+              media posts. Friday’s public barrage on his Truth Social platform,
+              which included multiple all-caps posts, highlighted his persistent
+              anger with the judge who handed down the $464 million judgment,
+              the New York attorney general who brought the civil fraud case and
+              Trump’s insistence that it’s all designed to derail his
+              presidential campaign.
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
           </div>
         </div>
       </article>
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
         <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/stumpy.webp"
-            class="w-full"
-          />
+          <img alt="" src="assets/img/stumpy.webp" class="w-full" />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                More than 100 iconic cherry trees in Washington are being cut down. So long, Stumpy  
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                More than 100 iconic cherry trees in Washington are being cut
+                down. So long, Stumpy
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              WASHINGTON — The sun is setting on Stumpy, the gnarled old cherry tree that has become a social media phenom. This year's cherry blossom festivities in Washington will be the last for Stumpy and more than 100 other cherry trees that will be cut down as part of a multiyear restoration of their Tidal Basin home. Starting in early summer, crews will begin working to replace the crumbling seawall around the Tidal Basin, the area around the Jefferson Memorial with the highest concentration of cherry trees. 
+              WASHINGTON — The sun is setting on Stumpy, the gnarled old cherry
+              tree that has become a social media phenom. This year's cherry
+              blossom festivities in Washington will be the last for Stumpy and
+              more than 100 other cherry trees that will be cut down as part of
+              a multiyear restoration of their Tidal Basin home. Starting in
+              early summer, crews will begin working to replace the crumbling
+              seawall around the Tidal Basin, the area around the Jefferson
+              Memorial with the highest concentration of cherry trees.
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
-            >
-              Read More
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
-        <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/taylor-swift.webp"
-            class="w-full"
-          />
-        </div>
-
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
-          <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
-          >
-            <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Judge Cites Taylor Swift Lyric in Response to Metallica Insurance Lawsuit 
-              </h3>
-            </a>
-
-            <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              MELBOURNE, AUSTRALIA - FEBRUARY 16: EDITORIAL USE ONLY. NO BOOK COVERS Taylor Swift performs at Melbourne Cricket Ground on February 16, 2024 in Melbourne, Australia. (Photo by Graham Denholm/TAS24/Getty Images for TAS Rights Management) A California judge couldn't help but bring Taylor Swift into the mix when turning down another musician's request to proceed to trial. 
-            </p>
-          </div>
-
-          <div class="sm:flex sm:items-end sm:justify-end">
-            <a
-              href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
-            >
-              Read More
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
-        <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/robinho.webp"
-            class="w-full"
-          />
-        </div>
-
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
-          <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
-          >
-            <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Former footballer Robinho jailed in rural penitentiary for infamous inmates 
-              </h3>
-            </a>
-
-            <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              SAO PAULO (AP) — Former footballer Robinho arrived early Friday at the rural Tremembe penitentiary where he is expected to serve at least 40% of his nine-year sentence for rape. The 40-year-old Robinho will spend the next 10 days alone in his cell, a common measure for the safety of rapists newly arrived at the prison, local authorities said. Never Going Back To Prime" - Why 20,000 Users Prefer This Shopping Secret 
-            </p>
-          </div>
-
-          <div class="sm:flex sm:items-end sm:justify-end">
-            <a
-              href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
@@ -386,7 +332,85 @@
         </div>
       </article>
 
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
+        <div class="flex flex-row w-1/2">
+          <img alt="" src="assets/img/taylor-swift.webp" class="w-full" />
+        </div>
+
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
+          <div
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
+          >
+            <a href="#">
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Judge Cites Taylor Swift Lyric in Response to Metallica
+                Insurance Lawsuit
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
+              MELBOURNE, AUSTRALIA - FEBRUARY 16: EDITORIAL USE ONLY. NO BOOK
+              COVERS Taylor Swift performs at Melbourne Cricket Ground on
+              February 16, 2024 in Melbourne, Australia. (Photo by Graham
+              Denholm/TAS24/Getty Images for TAS Rights Management) A California
+              judge couldn't help but bring Taylor Swift into the mix when
+              turning down another musician's request to proceed to trial.
+            </p>
+          </div>
+
+          <div class="sm:flex sm:items-end sm:justify-end">
+            <a
+              href="#"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
+        <div class="flex flex-row w-1/2">
+          <img alt="" src="assets/img/robinho.webp" class="w-full" />
+        </div>
+
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
+          <div
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
+          >
+            <a href="#">
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Former footballer Robinho jailed in rural penitentiary for
+                infamous inmates
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
+              SAO PAULO (AP) — Former footballer Robinho arrived early Friday at
+              the rural Tremembe penitentiary where he is expected to serve at
+              least 40% of his nine-year sentence for rape. The 40-year-old
+              Robinho will spend the next 10 days alone in his cell, a common
+              measure for the safety of rapists newly arrived at the prison,
+              local authorities said. Never Going Back To Prime" - Why 20,000
+              Users Prefer This Shopping Secret
+            </p>
+          </div>
+
+          <div class="sm:flex sm:items-end sm:justify-end">
+            <a
+              href="#"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
         <div class="flex flex-row w-1/2">
           <img
             alt=""
@@ -395,32 +419,40 @@
           />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Here's precisely how much Joe Biden received with every Social Security check in 2023
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Here's precisely how much Joe Biden received with every Social
+                Security check in 2023
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              For more than a half-century, it's been something of a custom for sitting presidents to publicly release their federal and/or state tax returns for anyone to view. With few exceptions (e.g., Donald Trump), every president has done so. On Monday, April 15 (Tax Day), the Bidens followed suit. I say "the Bidens," because Joe Biden files a joint federal tax return with his wife.
+              For more than a half-century, it's been something of a custom for
+              sitting presidents to publicly release their federal and/or state
+              tax returns for anyone to view. With few exceptions (e.g., Donald
+              Trump), every president has done so. On Monday, April 15 (Tax
+              Day), the Bidens followed suit. I say "the Bidens," because Joe
+              Biden files a joint federal tax return with his wife.
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
           </div>
         </div>
       </article>
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
         <div class="flex flex-row w-1/2">
           <img
             alt=""
@@ -429,97 +461,113 @@
           />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Michigan man credits $500,000 lottery win to ‘sign’ from his movie star look-alike
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Michigan man credits $500,000 lottery win to ‘sign’ from his
+                movie star look-alike
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              A 26-year-old man from Genessee County, Michigan, is half a million dollars richer thanks to a “sign” he says he took from his movie star doppelganger.
-
-              The man, who chose to remain anonymous, according to the Michigan Lottery, said he was watching a movie where the main character wins big on a lottery ticket.
-              
-              “The main character was my look-alike, so I took it as a sign to go buy a ticket,” he said.
+              A 26-year-old man from Genessee County, Michigan, is half a
+              million dollars richer thanks to a “sign” he says he took from his
+              movie star doppelganger. The man, who chose to remain anonymous,
+              according to the Michigan Lottery, said he was watching a movie
+              where the main character wins big on a lottery ticket. “The main
+              character was my look-alike, so I took it as a sign to go buy a
+              ticket,” he said.
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
           </div>
         </div>
       </article>
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
         <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/matt.webp"
-            class="w-full"
-          />
+          <img alt="" src="assets/img/matt.webp" class="w-full" />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                Matt Gaetz worries House may “end up with a Democrat” speaker after MTG files to oust Mike Johnson  
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                Matt Gaetz worries House may “end up with a Democrat” speaker
+                after MTG files to oust Mike Johnson
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              Rep. Marjorie Taylor Greene, R-Ga., on Friday filed a motion to oust Speaker Mike Johnson as the House voted to avoid a government shutdown, NBC News reports. Greene did not file the motion as privileged, which would force a vote within two days, but could notice it as privileged after the House returns from a two-week recess on April 9. Greene said she filed the motion because Johnson forced a vote on multiple continuing resolutions and funding bills to keep the government running... 
+              Rep. Marjorie Taylor Greene, R-Ga., on Friday filed a motion to
+              oust Speaker Mike Johnson as the House voted to avoid a government
+              shutdown, NBC News reports. Greene did not file the motion as
+              privileged, which would force a vote within two days, but could
+              notice it as privileged after the House returns from a two-week
+              recess on April 9. Greene said she filed the motion because
+              Johnson forced a vote on multiple continuing resolutions and
+              funding bills to keep the government running...
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
           </div>
         </div>
       </article>
-      <article class="flex bg-white shadow-md hover:shadow-xl my-3">
+      <article class="flex my-3 bg-white shadow-md hover:shadow-xl">
         <div class="flex flex-row w-1/2">
-          <img
-            alt=""
-            src="assets/img/food.webp"
-            class="w-full"
-          />
+          <img alt="" src="assets/img/food.webp" class="w-full" />
         </div>
 
-        <div class="flex w-1/2 flex-col justify-between dark:bg-neutral-900">
+        <div class="flex flex-col justify-between w-1/2 dark:bg-neutral-900">
           <div
-            class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+            class="p-4 border-s border-gray-900/10 sm:border-l-transparent sm:p-6"
           >
             <a href="#">
-              <h3 class="font-bold line-clamp-2 sm:line-clamp-3 uppercase text-gray-900 dark:text-gray-300">
-                A Huge New Study Found That a Popular Diet Is Linked With a 91% Higher Risk of Cardiovascular Death 
+              <h3
+                class="font-bold text-gray-900 uppercase line-clamp-2 sm:line-clamp-3 dark:text-gray-300"
+              >
+                A Huge New Study Found That a Popular Diet Is Linked With a 91%
+                Higher Risk of Cardiovascular Death
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed dark:text-gray-400">
-              Intermittent fasting — a dieting strategy that limits when someone can eat each day — has been linked to a 91% higher risk of heart-related death in a large study. This risk was tied to eating in an eight-hour or shorter window in the 24-hour day, compared with a more typical 12- to 16-hour window. The new, preliminary research was presented March 18 at the American Heart Association (AHA) EPI Lifestyle Scientific Sessions 2024. 
+              Intermittent fasting — a dieting strategy that limits when someone
+              can eat each day — has been linked to a 91% higher risk of
+              heart-related death in a large study. This risk was tied to eating
+              in an eight-hour or shorter window in the 24-hour day, compared
+              with a more typical 12- to 16-hour window. The new, preliminary
+              research was presented March 18 at the American Heart Association
+              (AHA) EPI Lifestyle Scientific Sessions 2024.
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-purple-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-100 transition hover:bg-purple-400"
+              class="block px-5 py-3 mx-2 text-xs font-bold text-center text-gray-100 uppercase transition bg-purple-500 hover:bg-purple-400"
             >
               Read More
             </a>
@@ -527,103 +575,145 @@
         </div>
       </article>
     </div>
-<!-- Baner -->
-    <section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
+    <!-- Baner -->
+    <section class="mt-10 rounded-lg shadow-2xl md:grid md:grid-cols-3">
       <img
-        alt=""
-        src="https://images.unsplash.com/photo-1611510338559-2f463335092c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-        class="h-32 w-full object-cover md:h-full"
+        src="https://blog.ipleaders.in/wp-content/uploads/2021/10/Advertisement-Media.jpg"
+        class="object-contain md:h-full"
       />
-    
+
       <div class="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
-        <p class="text-sm font-semibold uppercase tracking-widest">Run with the pack</p>
-    
-        <h2 class="mt-6 font-black uppercase">
-          <span class="text-4xl font-black sm:text-5xl lg:text-6xl"> Get 20% off </span>
-    
-          <span class="mt-2 block text-sm">On your next order over $50</span>
+        <h2 class="mt-2 font-black uppercase">
+          <span
+            class="text-4xl font-black sm:text-5xl lg:text-6xl dark:text-gray-200"
+            >Reklamo Ketu!
+          </span>
         </h2>
-    
+
         <a
-          class="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
+          class="inline-block w-full py-4 mt-2 text-sm font-bold text-white uppercase bg-black md:mt-10 dark:border-gray-500"
           href="#"
         >
-          Get Discount
+          kontaktoni!
         </a>
-    
-        <p class="mt-8 text-xs font-medium uppercase text-gray-400">
-          Offer valid until 24th March, 2021 *
-        </p>
       </div>
     </section>
 
-    <section class="px-5 py-10 dark:bg-gray-100 dark:text-gray-800">
+    <section class="px-2 py-10 dark:bg-neutral-900 dark:text-gray-300">
       <div class="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
-        <div class="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
-            <div class="flex flex-col space-y-2">
-              <h3 class="flex items-center space-x-2 dark:text-gray-600">
-                <span class="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
-               
-             
-                
-            </div>
-           
-           
-          
+        <div
+          class="relative flex col-span-12 bg-center bg-cover dark:bg-gray-500 lg:col-span-8 md:col-span-9 min-h-96 bg-live"
+        >
+          <span
+            class="w-16 h-5 mt-2 text-sm font-bold text-center text-white bg-red-600 bg-red animate-pulse"
+            >Live</span
+          >
         </div>
-        <div class="relative flex col-span-12 dark:bg-gray-500 bg-center bg-no-repeat bg-cover xl:col-span-6 lg:col-span-5 md:col-span-9 min-h-96" style="background-image: url('https://source.unsplash.com/random/239x319');">
-          <span class="flex items-center mb-4 space-x-2 dark:text-violet-600">
-            <span class="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-violet-600">
-              
-          </span>
-          <span class="absolute flex-shrink-0 w-3 h-3 rounded-full left-9 top-1 animate-ping bg-red-700"></span>
-            </span>
-            <span class="text-sm font-bold text-red-600 ">Live</span>
-          
-          <a class="flex flex-col items-center justify-end p-6 text-center sm:p-8 flex-grow-1 bg-gradient-to-b dark:from-gray-50 dark:to-gray-50">
-            
-            <h1 class="font-serif text-2xl font-semibold text-gray-100 dark:text-gray-800">Morbi mattis justo est, ac consectetur dui eleifend vitae. Donec venenatis?</h1>
-          </a>
-        </div>
-        <div class="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
-          <div class="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600">
-            <button type="button" class="pb-5 text-xs font-bold uppercase border-b-4 border-purple-700 dark:border-violet-600">Latest</button>
-            <button type="button" class="pb-5 text-xs font-bold uppercase hover:border-b-4 border-purple-600 dark:text-gray-600">Popular</button>
+        <div class="hidden py-2 lg:col-span-4 md:col-span-3 lg:block">
+          <div
+            class="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600"
+          >
+            <button
+              type="button"
+              class="pb-5 text-xs font-bold uppercase border-b-4 border-purple-700 dark:border-violet-600"
+            >
+              Latest
+            </button>
+            <button
+              type="button"
+              class="pb-5 text-xs font-bold uppercase border-purple-600 hover:border-b-4 dark:text-gray-600"
+            >
+              Popular
+            </button>
           </div>
           <div class="flex flex-col dark:divide-gray-300">
             <div class="flex px-1 py-4">
-              <img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/244x324">
+              <img
+                alt=""
+                class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500"
+                src="https://source.unsplash.com/random/244x324"
+              />
               <div class="flex flex-col flex-grow">
-                <a href="#" class="font-serif hover:underline">Aenean ac tristique lorem, ut mollis dui.</a>
-                <p class="mt-auto text-xs dark:text-gray-600">5 minutes ago
-                  <a href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline">Politics</a>
+                <a href="#" class="font-serif hover:underline"
+                  >Aenean ac tristique lorem, ut mollis dui.</a
+                >
+                <p class="mt-auto text-xs dark:text-gray-600">
+                  5 minutes ago
+                  <a href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline"
+                    >Politics</a
+                  >
                 </p>
               </div>
             </div>
             <div class="flex px-1 py-4">
-              <img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/245x325">
+              <img
+                alt=""
+                class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500"
+                src="https://source.unsplash.com/random/245x325"
+              />
               <div class="flex flex-col flex-grow">
-                <a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Nulla consectetur efficitur.</a>
-                <p class="mt-auto text-xs dark:text-gray-600">14 minutes ago
-                  <a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Sports</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  class="font-serif hover:underline"
+                  >Nulla consectetur efficitur.</a
+                >
+                <p class="mt-auto text-xs dark:text-gray-600">
+                  14 minutes ago
+                  <a
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline"
+                    >Sports</a
+                  >
                 </p>
               </div>
             </div>
             <div class="flex px-1 py-4">
-              <img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/246x326">
+              <img
+                alt=""
+                class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500"
+                src="https://source.unsplash.com/random/246x326"
+              />
               <div class="flex flex-col flex-grow">
-                <a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Vitae semper augue purus tincidunt libero.</a>
-                <p class="mt-auto text-xs dark:text-gray-600">22 minutes ago
-                  <a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">World</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  class="font-serif hover:underline"
+                  >Vitae semper augue purus tincidunt libero.</a
+                >
+                <p class="mt-auto text-xs dark:text-gray-600">
+                  22 minutes ago
+                  <a
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline"
+                    >World</a
+                  >
                 </p>
               </div>
             </div>
             <div class="flex px-1 py-4">
-              <img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/247x327">
+              <img
+                alt=""
+                class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500"
+                src="https://source.unsplash.com/random/247x327"
+              />
               <div class="flex flex-col flex-grow">
-                <a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Suspendisse potenti.</a>
-                <p class="mt-auto text-xs dark:text-gray-600">37 minutes ago
-                  <a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Business</a>
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  class="font-serif hover:underline"
+                  >Suspendisse potenti.</a
+                >
+                <p class="mt-auto text-xs dark:text-gray-600">
+                  37 minutes ago
+                  <a
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline"
+                    >Business</a
+                  >
                 </p>
               </div>
             </div>
@@ -632,89 +722,111 @@
       </div>
     </section>
 
-
     <!-- footer -->
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-white dark:bg-neutral-900">
       <div class="container p-6 mx-auto">
-          <div class="lg:flex">
-              <div class="w-full -mx-6 lg:w-2/5">
-                  <div class="px-6">
-                      <a href="#">
-                         
+        <div class="lg:flex">
+          <div class="w-full -mx-6 lg:w-2/5">
+            <div class="px-6">
+              <a href="#">
                 <a href="#">
-                  <i class="fa-regular fa-newspaper text-purple-700 text-3xl font-bold mx-1"><p>news</p></i>
+                  <i
+                    class="mx-1 text-3xl font-bold text-purple-700 fa-regular fa-newspaper"
+                    ><p>news</p></i
+                  >
                 </a>
-                      </a>
-  
-                      <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400"> Website me i mire per informacion cilesor, te shpejte dhe te pavarur. </p>
-                        <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400"> 
+              </a>
 
-                          Na kontaktoni
-                          Per cdo informacion ose problematike </p>
-  
-                      <div class="flex mt-6 -mx-2">
-                        <a href="">  <i
-                              class="fa-brands fa-x-twitter mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
-                              
-                          </i></a>
-                      
-                       <a href="">   <i 
-                              class="fa-brands fa-facebook mx-2 text-blue-700 transition-colors duration-300 dark:text-gray-300 hover:text-purple-500 dark:hover:text-blue-400"
-                              >
-                              
-                          </i>
-                        </a>
-                         <a href=""> <i
-                              class="fa-brands fa-youtube mx-2 text-red-600 transition-colors duration-300 dark:text-gray-300 hover:text-purple-500 dark:hover:text-blue-400">
-                          </i></a>
-                      </div>
-                  </div>
+              <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
+                Website me i mire per informacion cilesor, te shpejte dhe te
+                pavarur.
+              </p>
+
+              <div class="flex mt-6 -mx-2">
+                <a href="">
+                  <i
+                    class="mx-2 text-gray-600 transition-colors duration-300 fa-brands fa-x-twitter dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  >
+                  </i
+                ></a>
+
+                <a href="">
+                  <i
+                    class="mx-2 text-blue-700 transition-colors duration-300 fa-brands fa-facebook dark:text-gray-300 hover:text-purple-500 dark:hover:text-blue-400"
+                  >
+                  </i>
+                </a>
+                <a href="">
+                  <i
+                    class="mx-2 text-red-600 transition-colors duration-300 fa-brands fa-youtube dark:text-gray-300 hover:text-purple-500 dark:hover:text-blue-400"
+                  >
+                  </i
+                ></a>
               </div>
-  
-              <div class="mt-6 lg:mt-0 lg:flex-1">
-                  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      <div>
-                          <h3 class="text-purple-700 font-bold uppercase dark:text-white">MENU</h3>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Live Stream</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Subscribe</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Login</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Report</a>
-                      </div>
-  
-                      <div>
-                          <h3 class="text-purple-700 font-bold uppercase dark:text-white">REGION</h3>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">US</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">EU</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Asia</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Africa</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Oceania</a>
-                      </div>
-  
-                      <div>
-                          <h3 class="text-purple-700 font-bold uppercase dark:text-white">CATEGORIES</h3>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Science</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Entertainment</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Finance</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Sports</a>
-                          <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Politics</a>
-                      </div>
-  
-                      <div>
-                          <h3 class="text-purple-700 font-bold uppercase dark:text-white">Contact</h3>
-                          <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+355 6x xx xx xxx
-                          </span>
-                          <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">info@news.site</span>
-                      </div>
-                  </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-6 text-sm text-gray-600 lg:mt-0 lg:flex-1 dark:text-gray-400"
+          >
+            <div
+              class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+            >
+              <div>
+                <h3 class="font-bold text-purple-700 uppercase dark:text-white">
+                  MENU
+                </h3>
+                <a href="#" class="block mt-2 hover:underline">Live Stream</a>
+                <a href="#" class="block mt-2 hover:underline">Subscribe</a>
+                <a href="#" class="block mt-2hover:underline">Login</a>
+                <a href="#" class="block mt-2 hover:underline">Report</a>
               </div>
+
+              <div>
+                <h3 class="font-bold text-purple-700 uppercase dark:text-white">
+                  REGION
+                </h3>
+                <a href="#" class="block mt-2 hover:underline">US</a>
+                <a href="#" class="block mt-2 hover:underline">EU</a>
+                <a href="#" class="block mt-2 hover:underline">Asia</a>
+                <a href="#" class="block mt-2 hover:underline">Africa</a>
+                <a href="#" class="block mt-2 hover:underline">Oceania</a>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-purple-700 uppercase dark:text-white">
+                  CATEGORIES
+                </h3>
+                <a href="#" class="block mt-2 hover:underline">Science</a>
+                <a href="#" class="block mt-2 hover:underline">Entertainment</a>
+                <a href="#" class="block mt-2 hover:underline">Finance</a>
+                <a href="#" class="block hover:underline">Sports</a>
+                <a href="#" class="block mt-2 hover:underline">Politics</a>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-purple-700 uppercase dark:text-white">
+                  Contact
+                </h3>
+                <span class="block mt-2 hover:underline"
+                  >+355 6x xx xx xxx
+                </span>
+                <span class="block mt-2 hover:underline">info@news.site</span>
+              </div>
+            </div>
           </div>
-  
-          <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
-  
-          <div class="text-center">
-              <i class="fa-regular fa-newspaper text-purple-700 text-md font-bold mx-1  dark:text-gray-400"><p>news</p></i> - 2024 - All rights reserved</i>
-          </div>
+        </div>
+
+        <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+
+        <div class="text-center dark:text-gray-300">
+          <i
+            class="mx-1 font-bold text-purple-600 fa-regular fa-newspaper text-md"
+            ><p>news</p></i
+          >
+          - 2024 - All rights reserved
+        </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
