@@ -1,31 +1,3 @@
-#menu-toggler {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 26px;
-  width: 38px;
-  height: 38px;
-  border: none;
-  outline: none;
-  appearance: none;
-}
-
-#menu-toggler:checked + nav {
-  display: block;
-}
-
-.menu-toggler-icon {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 18px;
-  width: 22px;
-  height: 22px;
-}
-nav {
-  display: none;
-}
-
 /* Custom ScrollBar  */
 /* Scrollbar width */
 ::-webkit-scrollbar {
