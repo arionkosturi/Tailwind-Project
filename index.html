@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body class="sm:mx-2 md:mx-4 xl:mx-20 dark:bg-neutral-900">
+  <body class="container mx-auto dark:bg-neutral-900">
     <!-- Header -->
     <header class="sticky top-0 z-30 bg-white shadow dark:bg-neutral-800">
       <div class="container mx-auto my-3">
         <div class="flex items-center justify-between">
-          <div class="flex items-center justify-between py-4">
+          <div class="flex items-center py-4">
             <div class="flex">
               <div class="mx-10 text-xl font-bold text-purple-700 logo">
                 <a href="#">
@@ -26,7 +26,7 @@
 
               <!--Search-->
               <div
-                class="flex lg:w-[500px] md:ml-16 lg:ml:32 text-purple-700 -space-x-16 hover:ring rounded-full ring-purple-300"
+                class="flex lg:w-[500px] md:ml-16 xl:ml:32 text-purple-700 -space-x-16 hover:ring rounded-full ring-purple-300"
               >
                 <input
                   type="text"
@@ -43,17 +43,17 @@
           </div>
           <!-- Menu Toggler -->
        <label for="menu-toggler">   <i
-        class="mx-4 my-2 fa-solid fa-bars md:hidden dark:text-gray-300"
+        class="mx-4 my-2 fa-solid fa-bars xl:hidden dark:text-gray-300"
       ></i></label>
        
 
           <input type="checkbox" id="menu-toggler" class="hidden peer"/>
           <!-- NAVBAR -->
           <nav
-            class="hidden peer-checked:block absolute w-full py-2 bg-white shadow-md sm:px-4 dark:bg-neutral-800 top-16 sm:mt-0 sm:top-0 sm:relative md:w-auto sm:opacity-100 md:flex md:items-center sm:shadow-none"
+            class="hidden xl:mr-10 peer-checked:block absolute xl:relative w-full py-2 bg-white shadow-md dark:bg-neutral-800 top-16 sm:mt-0 xl:top-0   xl:flex md:items-center lg:shadow-none justify-end"
           >
             <div
-              class="flex flex-col mx-10 text-left text-purple-700 md:flex-row sm:mx-1"
+              class="flex flex-col text-left text-purple-700 xl:flex-row shadow-md xl:shadow-none "
             >
               <a
                 class="transition-all duration-300 ease-in-out sm:px-2 text-md hover:text-white hover:bg-purple-600"
@@ -71,11 +71,11 @@
                 >Sports</a
               >
 
-              <div class="relative inline-block text-left">
+              <div class="relative inline-block text-left hover:text-white hover:bg-purple-600">
                 <div class="group">
                   <button
                     type="button"
-                    class="inline-flex items-center w-full text-purple-700 transition-all duration-300 ease-in-out justify-left sm:px-2 text-md"
+                    class="inline-flex items-center w-full hover:text-white hover:bg-purple-600 transition-all duration-300 ease-in-out justify-left sm:px-2 text-md"
                   >
                     More
                     <!-- Dropdown arrow -->
@@ -90,7 +90,7 @@
                   </button>
                   <!-- Dropdown menu -->
                   <div
-                    class="absolute left-0 invisible w-full mt-1 transition duration-300 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 sm:w-auto top-5 dark:bg-neutral-800 group-hover:opacity-100 group-hover:visible"
+                    class="absolute left-0 invisible w-full mt-1 transition duration-300 bg-white rounded-md shadow-lg opacity-0 xl:w-auto top-5 dark:bg-neutral-800 group-hover:opacity-100 group-hover:visible"
                   >
                     <div class="py-1">
                       <a
@@ -139,7 +139,7 @@
     </header>
     <!-- Submenu -->
     <div
-      class="hidden z-20 sm:block sticky text-center bg-gray-100 dark:bg-neutral-900 top-[76px]"
+      class="hidden z-20 xl:block sticky text-center bg-gray-100 dark:bg-neutral-900 top-[76px]"
     >
       <span class="mx-2 font-bold text-m dark:text-gray-300">Today's News</span>
       <a
