@@ -24,6 +24,7 @@
       <div class="mx-auto">
         <div class="flex justify-between items-center py-4">
           <div class="flex">
+            <!-- Logo -->
             <div class="mx-10 font-bold text-purple-700 text-xl">
               <a href="#">
                 <i class="fa-newspaper fa-regular"><p>news</p></i>
@@ -45,6 +46,7 @@
                 ></i>
               </div>
             </div>
+            <!--./Search-->
           </div>
           <!-- Menu Toggler -->
           <label for="menu-toggler">
@@ -53,6 +55,7 @@
             ></i>
           </label>
           <input type="checkbox" id="menu-toggler" class="hidden peer" />
+          <!-- ./Menu Toggler -->
 
           <!-- NAVBAR -->
           <nav
@@ -76,73 +79,76 @@
                 href="#"
                 >Sports</a
               >
-            <!-- Dropdown -->
+              <!-- Dropdown -->
               <div
                 class="inline-block relative hover:bg-purple-600 text-left hover:text-white group"
               >
-                  <button
-                    type="button"
-                    class="inline-flex justify-left items-center hover:bg-purple-600 sm:px-2 w-full text-md hover:text-white transition-all duration-300 ease-in-out"
+                <button
+                  type="button"
+                  class="inline-flex justify-left items-center hover:bg-purple-600 sm:px-2 w-full text-md hover:text-white transition-all duration-300 ease-in-out"
+                >
+                  More
+                  <!-- Dropdown arrow -->
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
                   >
-                    More
-                    <!-- Dropdown arrow -->
-                    <svg
-                      class="ml-1 w-4 h-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
+                    <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                  </svg>
+                </button>
+                <!-- Dropdown items -->
+                <div
+                  class="group-hover:visible top-5 left-0 absolute bg-white dark:bg-neutral-800 opacity-0 group-hover:opacity-100 shadow-lg mt-1 rounded-md w-full xl:w-auto transition duration-300 invisible"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >News</a
                     >
-                      <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
-                    </svg>
-                  </button>
-                  <!-- Dropdown items -->
-                  <div
-                    class="group-hover:visible top-5 left-0 absolute bg-white dark:bg-neutral-800 opacity-0 group-hover:opacity-100 shadow-lg mt-1 rounded-md w-full xl:w-auto transition duration-300 invisible"
-                  >
-                    <div class="py-1">
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >News</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Life</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Entertainment</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Finance</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Sports</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Climate Change</a
-                      >
-                      <a
-                        href="#"
-                        class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
-                        >Health</a
-                      >
-                    </div>
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Life</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Entertainment</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Finance</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Sports</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Climate Change</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:bg-purple-600 px-4 py-2 text-gray-700 text-sm hover:text-white dark:text-gray-200"
+                      >Health</a
+                    >
                   </div>
+                </div>
               </div>
             </div>
           </nav>
+          <!-- ./NAVBAR -->
         </div>
       </div>
     </header>
+    <!-- ./Header -->
+
     <!-- Submenu -->
     <div
       class="xl:block top-[76px] z-20 sticky hidden bg-gray-100 dark:bg-neutral-900 text-center"
@@ -179,6 +185,7 @@
         >Contact</a
       >
     </div>
+    <!-- ./Submenu -->
 
     <!-- Main News -->
     <div class="md:flex">
@@ -253,7 +260,7 @@
       <h1 class="text-2xl">Real Time</h1>
       <div class="border-red-600 border-b-8 w-2/12"></div>
     </div>
-
+    <!-- Real News - Real Time -->
     <div class="grid lg:grid-cols-2 2xl:grid-cols-3">
       <article class="flex bg-white shadow-xl hover:shadow-xl my-3">
         <div class="flex flex-row w-1/2">
@@ -580,31 +587,42 @@
         </div>
       </article>
     </div>
-    <!-- Baner -->
-    <section class="md:grid md:grid-cols-3 shadow-2xl mt-10 rounded-lg">
+    <!-- Reklama -->
+    <section
+      class="md:grid md:grid-cols-2 opacity-85 hover:opacity-100 shadow-2xl mt-10 rounded-xl"
+    >
       <img
         src="https://blog.ipleaders.in/wp-content/uploads/2021/10/Advertisement-Media.jpg"
-        class="md:h-full object-contain"
+        class="p-2 rounded-2xl md:h-full object-contain"
       />
 
-      <div class="md:col-span-2 p-4 sm:p-6 lg:p-8 text-center">
+      <div class="p-4 sm:p-6 lg:p-8 text-center">
         <h2 class="mt-2 font-black uppercase">
           <span
-            class="font-black text-4xl sm:text-5xl lg:text-6xl dark:text-gray-200"
+            class="font-black text-4xl sm:text-5xl lg:text-6xl dark:text-gray-200 animate-pulse ease-in"
             >Reklamo Ketu!
           </span>
         </h2>
 
         <a
-          class="inline-block dark:border-gray-500 bg-black mt-2 md:mt-10 py-4 w-full font-bold text-sm text-white uppercase"
+          class="inline-block dark:border-gray-500 bg-black hover:bg-purple-800 mt-2 md:mt-10 py-4 w-full font-bold text-sm text-white uppercase"
           href="#"
         >
           kontaktoni!
         </a>
       </div>
     </section>
+    <!-- ./Reklama -->
 
+    <!-- Live and Trending Section -->
     <section class="dark:bg-neutral-900 px-2 py-10 dark:text-gray-300">
+      <!-- Slogan - Categories -->
+      <div class="bg-gray-100 dark:bg-neutral-700 w-full dark:text-gray-200">
+        <div class="border-t-8 border-red-600 w-2/12"></div>
+        <h3 class="text-xl">Live and</h3>
+        <h1 class="text-2xl">Trending Now</h1>
+        <div class="border-red-600 border-b-8 w-2/12"></div>
+      </div>
       <div class="gap-y-6 md:gap-10 grid grid-cols-12 mx-auto container">
         <div
           class="relative flex col-span-12 md:col-span-9 lg:col-span-8 bg-live dark:bg-gray-500 bg-cover bg-center min-h-96"
@@ -726,59 +744,91 @@
         </div>
       </div>
     </section>
+    <!-- ./Live and Trending Section -->
 
-<!-- Categories -->
-<div class="container">
-  <div class="slogan">
-    <div class="red-line-small"></div>
-    <h3>Categories</h3>
-    <div class="red-line-small"></div>
-  </div>
-  <div class="relative xl:flex gap-1 grid grid-cols-2 md:grid-cols-3 mx-auto cursor-pointer ms-1">
-    <!-- Individual Category -->
-    <div class="relative w-[99%] group">
-      <img src="assets/img/science.jpg" class="block opacity-100 group-hover:opacity-80 w-full" />
-      <div class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100">
-        <div class="bg-purple-600 p-2 text-white">Science</div>
+    <!-- Categories -->
+    <div class="container">
+      <!-- Slogan - Categories -->
+      <div class="bg-gray-100 dark:bg-neutral-700 w-full dark:text-gray-200">
+        <div class="border-t-8 border-red-600 w-2/12"></div>
+        <h1 class="text-2xl">Categories</h1>
+        <div class="border-red-600 border-b-8 w-2/12"></div>
       </div>
-    </div>
-    <!-- ./Individual Category -->
-    <!-- Individual Category -->
-    <div class="relative w-[99%] group">
-      <img src="assets/img/entertainment.jpeg" class="block opacity-100 group-hover:opacity-80" />
-      <div class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100">
-        <div class="bg-purple-600 p-2 text-sm text-white">Entertainment</div>
-      </div>
-    </div>
-    <!-- ./Individual Category -->
-    <!-- Individual Category -->
-    <div class="relative w-[99%] group">
-      <img src="assets/img/sports.webp" class="block opacity-100 group-hover:opacity-80" />
-      <div class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100">
-        <div class="bg-purple-600 p-2 text-white">Sports</div>
-      </div>
-    </div>
-    <!-- ./Individual Category -->
-    <!-- Individual Category -->
-    <div class="relative w-[99%] group">
-      <img src="assets/img/politics.webp" class="block opacity-100 group-hover:opacity-80" />
-      <div class="top-[45%] left-[35%] absolute opacity-90 group-hover:opacity-100">
-        <div class="bg-purple-600 hover:opacity-100 p-2 text-white">Politics</div>
-      </div>
-    </div>
-    <!-- ./Individual Category -->
-      <!-- Individual Category -->
-      <div class="relative w-[99%] group">
-        <img src="assets/img/finance.webp" class="block opacity-100 group-hover:opacity-80" />
-        <div class="top-[45%] left-[35%] absolute opacity-90 group-hover:opacity-100">
-          <div class="bg-purple-600 p-2 text-white">Finance</div>
+      <div
+        class="relative xl:flex gap-1 grid grid-cols-2 md:grid-cols-3 mx-auto cursor-pointer ms-1"
+      >
+        <!-- Individual Category -->
+        <div class="relative w-[99%] group">
+          <img
+            src="assets/img/science.jpg"
+            class="block opacity-100 group-hover:opacity-80 w-full"
+          />
+          <div
+            class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100"
+          >
+            <div class="bg-purple-600 p-2 text-white">Science</div>
+          </div>
         </div>
+        <!-- ./Individual Category -->
+        <!-- Individual Category -->
+        <div class="relative w-[99%] group">
+          <img
+            src="assets/img/entertainment.jpeg"
+            class="block opacity-100 group-hover:opacity-80"
+          />
+          <div
+            class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100"
+          >
+            <div class="bg-purple-600 p-2 text-sm text-white">
+              Entertainment
+            </div>
+          </div>
+        </div>
+        <!-- ./Individual Category -->
+        <!-- Individual Category -->
+        <div class="relative w-[99%] group">
+          <img
+            src="assets/img/sports.webp"
+            class="block opacity-100 group-hover:opacity-80"
+          />
+          <div
+            class="top-[45%] left-[35%] absolute opacity-80 group-hover:opacity-100"
+          >
+            <div class="bg-purple-600 p-2 text-white">Sports</div>
+          </div>
+        </div>
+        <!-- ./Individual Category -->
+        <!-- Individual Category -->
+        <div class="relative w-[99%] group">
+          <img
+            src="assets/img/politics.webp"
+            class="block opacity-100 group-hover:opacity-80"
+          />
+          <div
+            class="top-[45%] left-[35%] absolute opacity-90 group-hover:opacity-100"
+          >
+            <div class="bg-purple-600 hover:opacity-100 p-2 text-white">
+              Politics
+            </div>
+          </div>
+        </div>
+        <!-- ./Individual Category -->
+        <!-- Individual Category -->
+        <div class="relative w-[99%] group">
+          <img
+            src="assets/img/finance.webp"
+            class="block opacity-100 group-hover:opacity-80"
+          />
+          <div
+            class="top-[45%] left-[35%] absolute opacity-90 group-hover:opacity-100"
+          >
+            <div class="bg-purple-600 p-2 text-white">Finance</div>
+          </div>
+        </div>
+        <!-- ./Individual Category -->
       </div>
-      <!-- ./Individual Category -->
-  </div>
-</div>
-<!-- ./Categories -->
-
+    </div>
+    <!-- ./Categories -->
 
     <!-- footer -->
     <footer class="bg-white dark:bg-neutral-900">
@@ -886,5 +936,6 @@
         </div>
       </div>
     </footer>
+    <!--./footer -->
   </body>
 </html>
